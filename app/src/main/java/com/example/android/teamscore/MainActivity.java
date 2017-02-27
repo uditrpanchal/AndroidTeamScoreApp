@@ -1,5 +1,6 @@
 package com.example.android.teamscore;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -125,6 +126,14 @@ public class MainActivity extends AppCompatActivity{
         displayForTeamB(teamBscores);
         Button resetBtn = (Button) findViewById(R.id.reset);
         resetBtn.setVisibility(view.INVISIBLE);
+
+       /* Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("geo:47.6, -122.3"));
+
+        if(intent.resolveActivity(getPackageManager()) != null)
+        {
+            startActivity(intent);
+        }*/
     }
 
 
